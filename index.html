@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafío - Todo List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <!-- COLUMNA IZQUIERDA: RESUMEN -->
+      <section class="summary">
+        <h1>Todo List</h1>
+
+        <div class="summary-box">
+          <p><strong>Total de tareas:</strong> <span id="total-tasks">0</span></p>
+          <p>
+            <strong>Tareas realizadas:</strong>
+            <span id="completed-tasks">0</span>
+          </p>
+        </div>
+
+        <h2>Resumen de tareas</h2>
+        <table class="summary-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Descripción</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody id="summary-body">
+            <!-- Se llena dinámicamente con JS -->
+          </tbody>
+        </table>
+      </section>
+
+      <!-- COLUMNA DERECHA: LISTA Y FORMULARIO -->
+      <section class="tasks">
+        <h2>Lista de tareas</h2>
+
+        <div class="add-task">
+          <input
+            type="text"
+            id="task-input"
+            placeholder="Escribe una nueva tarea..."
+          />
+          <button id="add-btn">Agregar tarea</button>
+        </div>
+
+        <ul id="task-list">
+          <!-- Se llena dinámicamente con JS -->
+        </ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
